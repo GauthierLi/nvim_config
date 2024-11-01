@@ -47,4 +47,17 @@ map("t", "<A-l>", [[ <C-\><C-N><C-w>l ]], opt)
 
 map("n", "0", "^", opt)
 map("n", "9", "$", opt)
+map("n", "wq", ":wq", opt)
+map("n", "qq", ":q", opt)
 map("n", "<leader>u", ":set number! relativenumber!<CR>", opt)
+map("v", "<C-f>", '"zy<Esc>/<C-r>z<CR>', opt)
+
+-- git 恢复改动代码
+require('gitsigns').setup {
+    on_attach = function(bufnr)
+        local gs = package.loaded.gitsigns
+        -- 恢复当前光标所在行的更改
+        vim.keymap.set('n', '<leader>gr', gs.reset_hunk, {buffer = bufnr, desc = "Reset hunk"})
+    end
+}
+
