@@ -6,6 +6,9 @@ require("plugin_configs.gitsigns")
 vim.o.list = true
 vim.o.listchars = "space:·"
 
+-- dictionary 
+vim.opt.dictionary:append("dictionary/general.txt")
+
 -- 启用 true color 支持
 vim.opt.termguicolors = true
 -- 设置配色方案为 monokai_pro

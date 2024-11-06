@@ -53,3 +53,4 @@ map("n", "<leader>u", ":set number! relativenumber!<CR>", opt)
 map("v", "<C-f>", '"zy<Esc>/<C-r>z<CR>', opt)
 
 map("n", "<leader>ds", [[:%s/\s\+$//e<CR>]],  {noremap = true, silent = true, desc="delete space"})
+-- map("n", "<leader>gd", ":Gdiffsplit", {noremap = true, silent = true, desc="Gdiffsplit"}) 
