@@ -54,3 +54,6 @@ map("v", "<C-f>", '"zy<Esc>/<C-r>z<CR>', opt)
 
 map("n", "<leader>ds", [[:%s/\s\+$//e<CR>]],  {noremap = true, silent = true, desc="delete space"})
 -- map("n", "<leader>gd", ":Gdiffsplit", {noremap = true, silent = true, desc="Gdiffsplit"}) 
+
+map("i", "<C-b><C-b>", "import pdb; pdb.set_trace()", opt)
+map("v",  '<C-a>', 'ggVG', opt)
