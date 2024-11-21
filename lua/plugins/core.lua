@@ -1,3 +1,3 @@
 return {
-  {"tpope/vim-fugitive", version=false}
+  {"tpope/vim-fugitive", version=false},
 }
