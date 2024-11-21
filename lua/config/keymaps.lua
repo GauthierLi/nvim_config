@@ -57,3 +57,10 @@ map("n", "<leader>ds", [[:%s/\s\+$//e<CR>]],  {noremap = true, silent = true, de
 
 map("i", "<C-b><C-b>", "import pdb; pdb.set_trace()", opt)
 map("v",  '<C-a>', 'ggVG', opt)
+-- 上下滚动浏览
+map("n", "<C-A-j>", "4j", opt)
+map("n", "<C-A-k>", "4k", opt)
+-- ctrl u / ctrl + d  只移动9行，默认移动半屏
+map("n", "<C-u>", "9k", opt)
+map("n", "<C-d>", "9j", opt)
+

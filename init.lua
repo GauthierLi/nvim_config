@@ -8,6 +8,7 @@ vim.o.listchars = "space:·"
 
 -- dictionary 
 vim.opt.dictionary:append("dictionary/general.txt")
+vim.opt.dictionary:append("dictionary/words.txt")
 
 -- 启用 true color 支持
 vim.opt.termguicolors = true
