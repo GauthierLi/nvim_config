@@ -10,3 +10,16 @@ vim.keymap.set("n", "<leader>cp", function()
    print("Copied: " .. filepath) -- 提示路径已复制
 end, { noremap = true, silent = true, desc = "Copy absolute file path" })
 
+-- 定义删除标记的快捷键
+vim.keymap.set('n', '<leader>dm', function()
+  local mark = vim.fn.input("Delete mark: ")
+  if mark == "!" then 
+    vim.cmd('delmarks!')
+    print("Delete all marks!")
+  elseif mark ~= "" then
+    vim.cmd('delmarks ' .. mark)
+    print("Deleted mark: " .. mark)
+  else
+    print("No mark specified!")
+  end
+end, { noremap = true, silent = true, desc = "Delete mark" })
