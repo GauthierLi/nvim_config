@@ -25,8 +25,8 @@ vim.keymap.set('n', '<leader>dm', function()
 end, { noremap = true, silent = true, desc = "Delete mark" })
 
 -- Declare
-vim.api.nvim_set_keymap('n', '<leader>dp', ':lua InsertCustomComment("python")<CR>', { noremap = true, silent = true , desc = "Declareation python"})
-vim.api.nvim_set_keymap('n', '<leader>dc', ':lua InsertCustomComment("cpp")<CR>', { noremap = true, silent = true , desc = "Declareation cpp"})
+vim.api.nvim_set_keymap('n', '<leader>dP', ':lua InsertCustomComment("python")<CR>', { noremap = true, silent = true , desc = "Declareation python"})
+vim.api.nvim_set_keymap('n', '<leader>dC', ':lua InsertCustomComment("cpp")<CR>', { noremap = true, silent = true , desc = "Declareation cpp"})
 
 function InsertCustomComment(language)
     local current_time = os.date("%Y/%m/%d %H:%M:%S")
