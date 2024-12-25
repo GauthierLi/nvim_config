@@ -1,6 +1,7 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 require("plugin_configs.gitsigns")
+require("plugin_configs.doge")
 
 -- 不可见字符的显示，这里只把空格显示为一个点
 vim.o.list = true
