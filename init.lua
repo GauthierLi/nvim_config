@@ -19,3 +19,10 @@ vim.cmd([[colorscheme monokai_pro]])
 vim.g.lightline = { colorscheme = 'monokai_pro' }
 
 vim.g.lazyvim_check_order = false
+vim.g.neoformat_c_clangformat = {
+    exe = 'clang-format',
+    args = {'-assume-filename=%:p', '--style=./.clang-format'},
+    stdin = 1,
+}
+
+vim.g.neoformat_enabled_c = {'clangformat'}
