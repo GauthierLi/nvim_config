@@ -2,6 +2,8 @@
 require("config.lazy")
 require("plugin_configs.gitsigns")
 require("plugin_configs.doge")
+require("plugin_configs.neovide")
+require("plugin_configs.copilot")
 
 -- 不可见字符的显示，这里只把空格显示为一个点
 vim.o.list = true
@@ -26,3 +28,4 @@ vim.g.neoformat_c_clangformat = {
 }
 
 vim.g.neoformat_enabled_c = {'clangformat'}
+vim.opt.scrolloff = 10
