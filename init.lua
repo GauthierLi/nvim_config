@@ -16,9 +16,11 @@ vim.opt.dictionary:append("dictionary/words.txt")
 -- 启用 true color 支持
 vim.opt.termguicolors = true
 -- 设置配色方案为 monokai_pro
-vim.cmd([[colorscheme monokai_pro]])
+-- vim.cmd([[colorscheme monokai_pro]])
+vim.cmd([[colorscheme monokai_pro_pink]])
 -- 设置 lightline 的配色方案为 monokai_pro
-vim.g.lightline = { colorscheme = 'monokai_pro' }
+-- vim.g.lightline = { colorscheme = 'monokai_pro' }
+vim.g.lightline = { colorscheme = 'monokai_pro_pink' }
 
 vim.g.lazyvim_check_order = false
 vim.g.neoformat_c_clangformat = {
