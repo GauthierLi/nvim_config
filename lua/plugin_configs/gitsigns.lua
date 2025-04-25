@@ -54,7 +54,7 @@ require('gitsigns').setup {
       vim.keymap.set('n', '<leader>gl', gs.toggle_current_line_blame, { buffer = bufnr, desc = "Blame line"})
       vim.keymap.set('n', ']h', function() gs.nav_hunk("next") end, { buffer = bufnr, desc = "next hunk"})
       vim.keymap.set('n', '[h', function() gs.nav_hunk("prev") end, { buffer = bufnr, desc = "preview hunk"})
-      vim.keymap.set('n', '<leader>gp', function() gs.preview_hunk_inline() end, { buffer = bufnr, desc = "preview hunk"})
+      vim.keymap.set('n', '<leader>gp', gs.preview_hunk_inline, { buffer = bufnr, desc = "preview change inline"})
   end
 
 }
