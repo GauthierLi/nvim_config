@@ -1,6 +1,7 @@
 return {
   {"tpope/vim-fugitive", version=false},
   {"kkoomen/vim-doge"},
+  {'pechorin/any-jump.vim'},
   {"giuxtaposition/blink-cmp-copilot"},
   {
     "zbirenbaum/copilot.lua",
