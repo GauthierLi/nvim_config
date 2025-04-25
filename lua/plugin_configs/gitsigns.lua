@@ -20,7 +20,7 @@ require('gitsigns').setup {
   signcolumn = true,  -- Toggle with `:Gitsigns toggle_signs`
   numhl      = false, -- Toggle with `:Gitsigns toggle_numhl`
   linehl     = false, -- Toggle with `:Gitsigns toggle_linehl`
-  word_diff  = false, -- Toggle with `:Gitsigns toggle_word_diff`
+  word_diff  = true, -- Toggle with `:Gitsigns toggle_word_diff`
   watch_gitdir = {
     follow_files = true
   },
@@ -54,6 +54,7 @@ require('gitsigns').setup {
       vim.keymap.set('n', '<leader>gl', gs.toggle_current_line_blame, { buffer = bufnr, desc = "Blame line"})
       vim.keymap.set('n', ']h', function() gs.nav_hunk("next") end, { buffer = bufnr, desc = "next hunk"})
       vim.keymap.set('n', '[h', function() gs.nav_hunk("prev") end, { buffer = bufnr, desc = "preview hunk"})
+      vim.keymap.set('n', '<leader>gp', function() gs.preview_hunk_inline() end, { buffer = bufnr, desc = "preview hunk"})
   end
 
 }
