@@ -10,7 +10,7 @@ if vim.g.neovide then
   vim.opt.guifont = "CodeNewRoman Nerd Font Mono:h14:antialias" -- 开启抗锯齿
 
   -- 插入模式粘贴
-  vim.keymap.set("i", "<C-v>", '<C-r>+', { noremap = true, silent = true })
+  vim.keymap.set("i", "<C-S-v>", '<C-r>+', { noremap = true, silent = true })
   -- Terminal 模式粘贴
-  vim.keymap.set("t", "<C-v>", "<C-\\><C-n>\"+pa", { noremap = true, silent = true })
+  vim.keymap.set("t", "<C-S-v>", "<C-\\><C-n>\"+pa", { noremap = true, silent = true })
 end
