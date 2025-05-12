@@ -7,7 +7,7 @@ if vim.g.neovide then
   -- vim.opt.guifont = "CodeNewRoman Nerd Font Mono:b"         -- 加粗
   -- vim.opt.guifont = "CodeNewRoman Nerd Font Mono:h14:h14:i"         -- 斜体
   -- vim.opt.guifont = "CodeNewRoman Nerd Font Mono:h14:b,i"       -- 加粗和斜体
-  vim.opt.guifont = "CodeNewRoman Nerd Font Mono:h14:antialias" -- 开启抗锯齿
+  -- vim.opt.guifont = "CodeNewRoman Nerd Font Mono:h14:antialias" -- 开启抗锯齿
 
   -- 插入模式粘贴
   vim.keymap.set("i", "<C-S-v>", '<C-r>+', { noremap = true, silent = true })

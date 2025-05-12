@@ -50,7 +50,7 @@ map("n", "9", "$", opt)
 map("n", "wq", ":wq", opt)
 map("n", "qq", ":q", opt)
 map("n", "<leader>u", ":set number! relativenumber!<CR>", opt)
--- map("v", "<C-f>", '"zy<Esc>/<C-r>z<CR>', opt)
+map("v", "<C-f>", '"zy<Esc>/<C-r>z<CR>', opt)
 
 map("n", "<leader>ds", [[:%s/\s\+$//e<CR>]],  {noremap = true, silent = true, desc="delete space"})
 map("n", "<leader>gd", ":Gdiffsplit", {noremap = true, silent = true, desc="Gdiffsplit"}) 
@@ -61,6 +61,6 @@ map("v",  '<C-a>', 'ggVG', opt)
 map("n", "<C-A-j>", "4j", opt)
 map("n", "<C-A-k>", "4k", opt)
 -- ctrl u / ctrl + d  只移动9行，默认移动半屏
-map("n", "<C-u>", "9k", opt)
-map("n", "<C-d>", "9j", opt)
+map("n", "<C-u>", "10k", opt)
+map("n", "<C-d>", "10j", opt)
 

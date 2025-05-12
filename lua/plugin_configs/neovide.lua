@@ -2,7 +2,7 @@
 vim.opt.linespace = 0
 
 -- 缩放比例
-vim.g.neovide_scale_factor = 1.3
+vim.g.neovide_scale_factor = 1.1
 
 -- 文本伽马和对比度
 vim.g.neovide_text_gamma = 0.0
