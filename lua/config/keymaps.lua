@@ -56,6 +56,7 @@ map("n", "<leader>ds", [[:%s/\s\+$//e<CR>]],  {noremap = true, silent = true, de
 map("n", "<leader>gd", ":Gdiffsplit", {noremap = true, silent = true, desc="Gdiffsplit"}) 
 
 map("i", "<C-b><C-b>", "import pdb; pdb.set_trace()", opt)
+map("i", "<C-d><C-d>", "import debugpy\nprint(\"waiting for client ...\")\ndebugpy.listen(5678)\ndebugpy.wait_for_client()", opt)
 map("v",  '<C-a>', 'ggVG', opt)
 -- 上下滚动浏览
 map("n", "<C-A-j>", "4j", opt)
