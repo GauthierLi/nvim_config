@@ -1,3 +1,7 @@
+if vim.g.vscode then
+  cmdheight = 1 -- this is the new line I added
+  return
+end
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 require("plugin_configs.gitsigns")
